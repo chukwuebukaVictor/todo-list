@@ -4,7 +4,7 @@
 
 > Todo list is a webapp where user can maintain a list of their todos.
 
-<img width="563" alt="Screenshot 2022-02-09 at 2 11 20 AM" src="./img/todoshot.png">
+<img width="563" alt="Screenshot 2022-02-09 at 2 11 20 AM" src="./todoshot.png">
 
 
 ## Built With
