@@ -21,19 +21,17 @@ let toDos = [
     },
 ]
 
-// console.log(toDos);
 
 const displayList = () => {
-    const listItem = document.querySelector('.list-item');
+    const listItems = document.querySelector('.list-items');
     toDos.sort((a,b) => a.index - b.index)
-toDos.forEach(function(toDo,i){
+toDos.forEach(function(toDo){
     const div = document.createElement('div');
-    div.innerHTML = `<input type="checkbox">${toDo.description} <span>
-    <i class="fas fa-ellipsis-v"></i>
-    <hr class="line-break">`;
-    // console.log(div);
-    listItem.appendChild(div)
-    console.log(listItem);
+    div.classList.add('list-item')
+    div.innerHTML = `<input type="checkbox">${toDo.description}<span>
+    <i class="fas fa-ellipsis-v"></i></span>`;
+    listItems.appendChild(div);
+    console.log(listItems);
 })
 }
 displayList();
