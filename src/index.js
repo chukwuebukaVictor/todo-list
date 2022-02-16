@@ -2,7 +2,7 @@ import _ from 'lodash';
 import './style.css';
 
 import printMe from './print.js';
-import Circle from './circle.png';
+import addTodo from './addTodo.js';
 
 const Intro = document.querySelector('.intro')
 const myIcon = new Image();
