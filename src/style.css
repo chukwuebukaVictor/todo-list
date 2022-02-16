@@ -1,9 +1,3 @@
-  
-  *{
-      padding: 0%;
-      margin: 0;
-      box-sizing: border-box;
-  }
 
   body {
     font-family: 'Open Sans', 'Lucida Grande', arial, sans-serif;
@@ -13,6 +7,11 @@
   #place-holder {
     box-shadow: 5px 15px 30px 0 #888;
     padding: 40px;
+  }
+  
+  #place-holder h2 {
+    font-weight: lighter;
+    opacity: 0.5;
   }
   
   #reload {
@@ -28,17 +27,6 @@
     text-decoration: none;
   }
   
-  #place-holder h2 {
-    font-weight: lighter;
-  }
-  
-/*   
-  .add-list span,
-  .main-container h2 span {
-    float: right;
-    opacity: 0.5;
-  }
-  
   span i {
     color: grey;
   }
@@ -49,4 +37,14 @@
   
   .add-list {
     opacity: 0.5;
-  } */
+  }
+  
+  .list-reset {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    display: block;
+    opacity: 0.6;
+    color: black;
+    margin-top: 1rem;
+  }
