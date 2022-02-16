@@ -1,40 +1,39 @@
 import _ from 'lodash';
 import './style.css';
-
-import printMe from './print.js';
 import addTodo from './addTodo.js';
 
-const Intro = document.querySelector('.intro')
-const myIcon = new Image();
- myIcon.src = Circle;
- console.log(myIcon);
-// Intro.insertAdjacentHTML = ('beforeend',myIcon)
-Intro.appendChild(myIcon)
+let toDos = [
+    {
+        description: 'Go to market',
+        completed: true,
+        index: 1
+    },
 
-// import img from './img/circle.png'
+    {
+        description: 'Take some rest',
+        completed: true,
+        index: 3,
+    },
+    {
+        description: 'Go to gym',
+        completed: true,
+        index: 2,
+    },
+]
 
+// console.log(toDos);
 
-//  function component() {
-//    const element = document.createElement('div');
-//   const btn = document.createElement('button');
-
-//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-//    element.classList.add('hello');
-
-//    // Add the image to our existing div.
-//   const myIcon = new Image();
-//   myIcon.src = Circle;
-
-//   element.appendChild(myIcon);
-
-
-
-//   btn.innerHTML = 'Click me and check the console!';
-//   btn.onclick = printMe;
-
-//   element.appendChild(btn);
-
-//    return element;
-//  }
-
-//  document.body.appendChild(component());
+const displayList = () => {
+    const listItem = document.querySelector('.list-item');
+    toDos.sort((a,b) => a.index - b.index)
+toDos.forEach(function(toDo,i){
+    const div = document.createElement('div');
+    div.innerHTML = `<input type="checkbox">${toDo.description} <span>
+    <i class="fas fa-ellipsis-v"></i>
+    <hr class="line-break">`;
+    // console.log(div);
+    listItem.appendChild(div)
+    console.log(listItem);
+})
+}
+displayList();
